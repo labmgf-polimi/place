@@ -1,11 +1,13 @@
 <?php
 header('Content-Type: text/html');
 
-// Database connection parameters
-$host = 'localhost';
-$db = 'bridges';
-$user = 'postgres';
-$pass = 'mysecretpassword';
+// Load database credentials from config.php
+$config = include 'config.php';
+
+$host = $config['DB_HOST'];
+$db = $config['DB_NAME'];
+$user = $config['DB_USER'];
+$pass = $config['DB_PASS'];
 
 // Create a connection to the PostgreSQL database
 $dsn = "pgsql:host=$host;dbname=$db";
@@ -67,7 +69,7 @@ $inspections = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <a href="#" class="navbar-icon pull-right visible-xs" id="sidebar-toggle-btn"><i
                             class="fa fa-search fa-lg white"></i></a>
                 </div>
-                <a class="navbar-brand" href="#">Inspection History for Bridge ID:
+                <a class="navbar-brand" href="#">Inspection History for Structure ID:
                     <?php echo htmlspecialchars($fkStructure); ?></a>
             </div>
             <div class="navbar-collapse collapse">
