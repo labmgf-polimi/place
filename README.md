@@ -16,7 +16,13 @@ Preservation of Landmarks and Architecture through Collaborative Environments: a
 
 [...]
 
-## How to install and run
+## Requirements
+
+* PostgreSQL + PostGIS
+
+[...]
+
+## Getting started
 
 [...]
 
@@ -41,4 +47,5 @@ This work is the results of the work documented in a series of conference procee
 
 ## Acknowledgements
 
-[...]
+The developers express their gratitude to Arch. Marcello Spigaroli and the State Property Agency (Emilia-Romagna Regional Directorate) for their support in providing study opportunities. Furthermore, the authors would like to thank Francesco Mazzocchi and Gianluca Terzi for sharing the results of their
+research from their bachelor’s thesis in Architectural Design, which explored the subjects under discussion.
